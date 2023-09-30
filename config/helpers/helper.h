@@ -23,6 +23,8 @@
 #define ZMK_BEHAVIOR_CORE_tap_dance       compatible = "zmk,behavior-tap-dance";       #binding-cells = <0>
 #define ZMK_BEHAVIOR_CORE_tri_state       compatible = "zmk,behavior-tri-state";       #binding-cells = <0>
 
+
+
 #define ZMK_BEHAVIOR(name, type, ...) \
     / { \
         behaviors { \
@@ -122,16 +124,115 @@
     #endif
 #endif
 
+
+#define ZMK_MACRO_2_PRESS(name, one, two) \
+    / { \
+        macros { \
+            name: name { \
+                compatible = "zmk,behavior-macro"; \
+                label = ZMK_HELPER_STRINGIFY(name); \
+                wait-ms = <0>; \
+                tap-ms = <0>; \
+                #binding-cells = <0>; \
+                bindings =  <&macro_tap &kp one>, <&macro_tap &kp two>; \
+            }; \
+        }; \
+    };
+
 #define ZMK_MACRO_3_PRESS(name, one, two, three) \
     / { \
         macros { \
             name: name { \
                 compatible = "zmk,behavior-macro"; \
-                label = ZMK_HELPER_STRINGIFY(UC_MACRO_ ## name); \
+                label = ZMK_HELPER_STRINGIFY(name); \
                 wait-ms = <0>; \
                 tap-ms = <0>; \
                 #binding-cells = <0>; \
                 bindings =  <&macro_tap &kp one>, <&macro_tap &kp two>,  <&macro_tap &kp three>; \
+            }; \
+        }; \
+    };
+
+#define ZMK_MACRO_COPY(name) \
+    / { \
+        macros { \
+            name: name { \
+                compatible = "zmk,behavior-macro"; \
+                label = ZMK_HELPER_STRINGIFY(name); \
+                wait-ms = <0>; \
+                tap-ms = <0>; \
+                #binding-cells = <0>; \
+                bindings =  <&macro_press &kp LCTRL>, <&macro_tap &kp C>,  <&macro_release &kp LCTRL>; \
+            }; \
+        }; \
+    };
+
+#define ZMK_MACRO_CUT(name) \
+    / { \
+        macros { \
+            name: name { \
+                compatible = "zmk,behavior-macro"; \
+                label = ZMK_HELPER_STRINGIFY(name); \
+                wait-ms = <0>; \
+                tap-ms = <0>; \
+                #binding-cells = <0>; \
+                bindings =  <&macro_press &kp LCTRL>, <&macro_tap &kp X>,  <&macro_release &kp LCTRL>; \
+            }; \
+        }; \
+    };
+
+#define ZMK_MACRO_PASTE(name) \
+    / { \
+        macros { \
+            name: name { \
+                compatible = "zmk,behavior-macro"; \
+                label = ZMK_HELPER_STRINGIFY(name); \
+                wait-ms = <0>; \
+                tap-ms = <0>; \
+                #binding-cells = <0>; \
+                bindings =  <&macro_press &kp LCTRL>, <&macro_tap &kp V>,  <&macro_release &kp LCTRL>; \
+            }; \
+        }; \
+    };
+
+#define ZMK_MACRO_UNDO(name) \
+    / { \
+        macros { \
+            name: name { \
+                compatible = "zmk,behavior-macro"; \
+                label = ZMK_HELPER_STRINGIFY(name); \
+                wait-ms = <0>; \
+                tap-ms = <0>; \
+                #binding-cells = <0>; \
+                bindings =  <&macro_press &kp LCTRL>, <&macro_tap &kp Z>,  <&macro_release &kp LCTRL>; \
+            }; \
+        }; \
+    };
+
+#define ZMK_MACRO_CTRL_ALT_Z(name) \
+    / { \
+        macros { \
+            name: name { \
+                compatible = "zmk,behavior-macro"; \
+                label = ZMK_HELPER_STRINGIFY(name); \
+                wait-ms = <0>; \
+                tap-ms = <0>; \
+                #binding-cells = <0>; \
+                bindings =  <&macro_press &kp LCTRL>,<&macro_press &kp LALT>, <&macro_tap &kp Z>,  <&macro_release &kp LALT>,<&macro_release &kp LCTRL>; \
+            }; \
+        }; \
+    };
+
+
+#define SHIFT_MODMORPH(name, first, second) \
+    / { \
+        behaviors { \
+            name: name { \
+                compatible = "zmk,behavior-mod-morph"; \
+                label = ZMK_HELPER_STRINGIFY(name); \
+                #binding-cells = <0>; \
+                bindings = <&kp first>, <&kp second>; \
+                mods = <(MOD_LSFT|MOD_RSFT)>; \
             }; \
         }; \
     };
@@ -172,3 +273,9 @@
     UC_MACRO(name ## _lower, &kp L0 &kp L1 &kp L2 &kp L3) \
     UC_MACRO(name ## _upper, &kp U0 &kp U1 &kp U2 &kp U3) \
     UC_MODMORPH(name, &name ## _lower, &name ## _upper)
+
+
+#define GLV80_LAYER(name, start, mid, end, thumb_row_1, thumb_row_2) \
+  ZMK_LAYER(name, start thumb_row_1 mid thumb_row_2 end)
+
+

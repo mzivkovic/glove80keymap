@@ -1,0 +1,173 @@
+draw_config:
+  shrink_wide_legends: 5
+  draw_key_sides: true
+  key_side_pars:
+    rel_x: 0
+    rel_y: 1
+    rel_w: 2
+    rel_h: 4
+    rx: 6
+    ry: 6
+  svg_extra_style: |
+    /* Custom CSS */
+    rect.side {
+        stroke: #24292e;
+    }
+
+    /* lighter symbol for transparent keys */
+    text.trans, .glyph.trans {
+        fill: inherit;
+        opacity: 0.4;
+    }
+
+parse_config:
+  trans_legend:
+    tap: $$mdi:transfer$$
+    type: trans
+
+  raw_binding_map:
+    '&out OUT_USB': '$$mdi:usb$$'
+    '&bt_sel 0': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-0$$}
+    '&bt_sel 1': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-1$$}
+    '&bt_sel 2': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-2$$}
+    '&bt_sel 3': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-3$$}
+    '&bt BT_CLR': {h: $$mdi:bluetooth$$ , t: 'Clear'}
+    '&bt BT_CLR_ALL': {h: $$mdi:bluetooth$$ , t: 'Clear All'}
+    '&bootloader': Boot
+    '&sys_reset': Reset
+    '&caps_word': 'Caps Word'
+    '&smart_shft': 'Smart Shift'
+    TO_MAGIC: '$$mdi:auto-fix$$'
+    IN_SRC: '$$mdi:web$$'
+    MIC_MUTE: '$$mdi:microphone$$'
+    ONEPASS: '$$mdi:lock-outline$$'
+    RAYCAST: '$$mdi:magnify$$'
+    EMOJI: '$$mdi:emoticon-happy-outline$$'
+    SCRNSHT: '$$mdi:monitor-screenshot$$'
+    '&rgb_ug RGB_SPI': {h: $$mdi:lightbulb-outline$$, t: 'Spd+'}
+    '&rgb_ug RGB_SPD': {h: $$mdi:lightbulb-outline$$, t: 'Spd-'}
+    '&rgb_ug RGB_SAI': {h: $$mdi:lightbulb-outline$$, t: 'Sat+'}
+    '&rgb_ug RGB_SAD': {h: $$mdi:lightbulb-outline$$, t: 'Sat-'}
+    '&rgb_ug RGB_HUI': {h: $$mdi:lightbulb-outline$$, t: 'Hue+'}
+    '&rgb_ug RGB_HUD': {h: $$mdi:lightbulb-outline$$, t: 'Hue-'}
+    '&rgb_ug RGB_BRI': {h: $$mdi:lightbulb-outline$$, t: 'Bri+'}
+    '&rgb_ug RGB_BRD': {h: $$mdi:lightbulb-outline$$, t: 'Bri-'}
+    '&rgb_ug RGB_TOG': {h: $$mdi:lightbulb-outline$$, t: 'Toggle'}
+    '&rgb_ug RGB_EFF': {h: $$mdi:lightbulb-outline$$, t: 'Effects'}
+    U_BTN1: {h: $$mdi:mouse$$, t: $$mdi:numeric-1$$}
+    U_BTN2: {h: $$mdi:mouse$$, t: $$mdi:numeric-2$$}
+    U_BTN3: {h: $$mdi:mouse$$, t: $$mdi:numeric-3$$}
+    U_MS_U: {h: $$mdi:mouse$$, t: $$mdi:arrow-up$$}
+    U_MS_D: {h: $$mdi:mouse$$, t: $$mdi:arrow-down$$}
+    U_MS_L: {h: $$mdi:mouse$$, t: $$mdi:arrow-left$$}
+    U_MS_R: {h: $$mdi:mouse$$, t: $$mdi:arrow-right$$}
+    U_WH_U: {h: $$mdi:tire$$, t: $$mdi:arrow-up$$}
+    U_WH_D: {h: $$mdi:tire$$, t: $$mdi:arrow-down$$}
+    '&macswap': {h: $$mdi:apple$$, t: $$mdi:swap-horizontal-bold$$}
+    '&winswap': {h: $$mdi:microsoft-windows$$, t: $$mdi:swap-horizontal-bold$$}
+
+  zmk_combos:
+    combo_copy: {align: right}
+
+  zmk_keycode_map:
+    HOME: Home
+    END: End
+    PG_UP: PgUp
+    PG_DN: PgDn
+    ESC: Esc
+    C_BRI_DN: $$tabler:brightness-down$$
+    C_BRI_UP: $$tabler:brightness-up$$
+    C_NEXT: $$mdi:skip-next$$
+    C_PP: $$mdi:play-pause$$
+    C_PREV: $$mdi:skip-previous$$
+    C_MUTE: $$mdi:volume-low$$
+    C_VOL_DN: $$mdi:volume-medium$$
+    C_VOL_UP: $$mdi:volume-high$$
+    TAB: $$mdi:keyboard-tab$$
+    LGUI: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
+    LALT: $$mdi:apple-keyboard-option$$
+    RALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LEFT_CONTROL: $$mdi:apple-keyboard-control$$
+    UP: $$mdi:arrow-up$$
+    DOWN: $$mdi:arrow-down$$
+    LEFT: $$mdi:arrow-left$$
+    RIGHT: $$mdi:arrow-right$$
+    RET: $$mdi:keyboard-return$$
+    BACKSPACE: $$mdi:backspace-outline$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+    SPACE: $$mdi:keyboard-space$$
+    LG(C): $$mdi:content-copy$$
+
+    # defaults
+    EXCLAMATION: '!'
+    EXCL: '!'
+    AT_SIGN: '@'
+    AT: '@'
+    HASH: '#'
+    POUND: '#'
+    DOLLAR: $
+    DLLR: $
+    PERCENT: '%'
+    PRCNT: '%'
+    CARET: ^
+    AMPERSAND: '&'
+    AMPS: '&'
+    ASTERISK: '*'
+    ASTRK: '*'
+    STAR: '*'
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL: '='
+    PLUS: +
+    MINUS: '-'
+    UNDERSCORE: _
+    UNDER: _
+    SLASH: /
+    FSLH: /
+    QUESTION: '?'
+    QMARK: '?'
+    BACKSLASH: \
+    BSLH: \
+    PIPE: '|'
+    NON_US_BACKSLASH: \
+    PIPE2: '|'
+    NON_US_BSLH: '|'
+    SEMICOLON: ;
+    SEMI: ;
+    COLON: ':'
+    SINGLE_QUOTE: ''''
+    SQT: ''''
+    APOSTROPHE: <
+    APOS: .
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    COMMA: ','
+    LESS_THAN: <
+    LT: <
+    PERIOD: .
+    DOT: .
+    GREATER_THAN: '>'
+    GT: '>'
+    LEFT_BRACKET: '['
+    LBKT: '['
+    LEFT_BRACE: '{'
+    LBRC: '{'
+    RIGHT_BRACKET: ']'
+    RBKT: ']'
+    RIGHT_BRACE: '}'
+    RBRC: '}'
+    GRAVE: '`'
+    TILDE: '~'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    TILDE2: '~'
