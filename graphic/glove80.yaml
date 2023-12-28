@@ -55,7 +55,7 @@ layers:
   - B
   - Caps Word
   - '&paste'
-  - ''
+  - '&delete_word'
   - +
   - '-'
   - '='
@@ -136,7 +136,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mac_paste'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&delete_word_mac'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
