@@ -153,7 +153,7 @@
         }; \
     };
 
-#define ZMK_MACRO_COPY(name) \
+#define CTR_C(name) \
     / { \
         macros { \
             name: name { \
@@ -167,7 +167,7 @@
         }; \
     };
 
-#define ZMK_MACRO_CUT(name) \
+#define CTR_X(name) \
     / { \
         macros { \
             name: name { \
@@ -181,7 +181,7 @@
         }; \
     };
 
-#define ZMK_MACRO_PASTE(name) \
+#define CTR_V(name) \
     / { \
         macros { \
             name: name { \
@@ -195,7 +195,7 @@
         }; \
     };
 
-#define ZMK_MACRO_UNDO(name) \
+#define CTRL_Z(name) \
     / { \
         macros { \
             name: name { \
@@ -209,7 +209,7 @@
         }; \
     };
 
-#define ZMK_MACRO_CTRL_ALT_Z(name) \
+#define ZMK_MACRO_CTR_C(name) \
     / { \
         macros { \
             name: name { \
