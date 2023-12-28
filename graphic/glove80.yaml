@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: glove80}
 layers:
   Base:
-  - ''
+  - {t: '1', h: toggle}
   - ''
   - ''
   - ''
@@ -54,7 +54,7 @@ layers:
   - V
   - B
   - Caps Word
-  - ''
+  - '&paste'
   - ''
   - +
   - '-'
@@ -67,9 +67,9 @@ layers:
   - PgUp
   - $$mdi:auto-fix$$
   - Home
-  - Smart Shift
   - {t: '&undo', h: '&undo_alt'}
-  - {t: '&copy', h: '&paste'}
+  - '&cut'
+  - '&copy'
   - {t: BSPC, h: Numbers, s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '"', h: Symbol}
   - {t: '$$mdi:keyboard-tab$$', h: Navigation}
@@ -82,6 +82,7 @@ layers:
   - ']'
   - PgDn
   '1':
+  - {t: Base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -134,6 +135,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&mac_paste'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -147,10 +149,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mac_cut'
+  - '&mac_copy'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
