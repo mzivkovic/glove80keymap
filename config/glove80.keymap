@@ -213,9 +213,9 @@ ZMK_BEHAVIOR(uno_alt_z, hold_tap,
     quick-tap-ms = <300>;
 )
 
-ZMK_MACRO_2_PRESS(mac_copy,LGUI,C)
-ZMK_MACRO_2_PRESS(mac_paste,LGUI,V)
-ZMK_MACRO_2_PRESS(mac_cut,LGUI,X)
+ZMK_MACRO_HOLD(mac_copy,LGUI,C)
+ZMK_MACRO_HOLD(mac_paste,LGUI,V)
+ZMK_MACRO_HOLD(mac_cut,LGUI,X)
 
 
 
