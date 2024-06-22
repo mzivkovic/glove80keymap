@@ -435,8 +435,8 @@ layers:
   - ''
   - ''
   - ''
+  - ''
   - {t: '$$mdi:arrow-up$$', h: '$$mdi:tire$$'}
-  - {t: '$$mdi:arrow-up$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:arrow-up$$', h: '$$mdi:tire$$'}
   - ''
   - ''
@@ -449,8 +449,8 @@ layers:
   - ''
   - {t: '$$mdi:arrow-left$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:arrow-down$$', h: '$$mdi:mouse$$'}
+  - {t: '$$mdi:arrow-up$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:arrow-right$$', h: '$$mdi:mouse$$'}
-  - ''
   - ''
   - ''
   - ''

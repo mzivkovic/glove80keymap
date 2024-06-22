@@ -87,6 +87,9 @@ svg.keymap {
 /* default key styling */
 rect.key {
     fill: #f6f8fa;
+}
+
+rect.key, rect.combo {
     stroke: #c9cccf;
     stroke-width: 1;
 }
@@ -122,7 +125,16 @@ text.label {
     font-weight: bold;
     text-anchor: start;
     stroke: white;
-    stroke-width: 2;
+    stroke-width: 4;
+    paint-order: stroke;
+}
+
+/* styling for optional footer */
+text.footer {
+    text-anchor: end;
+    dominant-baseline: auto;
+    stroke: white;
+    stroke-width: 4;
     paint-order: stroke;
 }
 
@@ -418,7 +430,7 @@ text.trans, .glyph.trans {
 <g transform="translate(28, 280)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<text x="0" y="-1" class="key tap"><tspan style="font-size: 60%">Navigation</tspan></text>
+<text x="0" y="-1" class="key tap"><tspan style="font-size: 62%">Navigat…</tspan></text>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 83%">toggle</tspan></text>
 </g>
 <g transform="translate(84, 280)" class="key keypos-47">
@@ -461,7 +473,7 @@ text.trans, .glyph.trans {
 <g transform="translate(458, 399) rotate(60.0)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<text x="0" y="-1" class="key tap"><tspan style="font-size: 60%">&amp;delete_word</tspan></text>
+<text x="0" y="-1" class="key tap"><tspan style="font-size: 62%">&amp;delete…</tspan></text>
 </g>
 <g transform="translate(550, 399) rotate(-60.0)" class="key keypos-55">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -522,7 +534,7 @@ text.trans, .glyph.trans {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
 <text x="0" y="-1" class="key tap">&amp;undo</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">&amp;undo_alt</tspan></text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 62%">&amp;undo_a…</tspan></text>
 </g>
 <g transform="translate(196, 308)" class="key keypos-67">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -551,7 +563,7 @@ text.trans, .glyph.trans {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:keyboard-tab"/>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">Navigation</tspan></text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 62%">Navigat…</tspan></text>
 </g>
 <g transform="translate(598, 427) rotate(-60.0)" class="key keypos-72">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -867,12 +879,12 @@ text.trans, .glyph.trans {
 <g transform="translate(420, 350) rotate(45.0)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<text x="0" y="-1" class="key tap"><tspan style="font-size: 60%">&amp;mac_paste</tspan></text>
+<text x="0" y="-1" class="key tap"><tspan style="font-size: 62%">&amp;mac_pa…</tspan></text>
 </g>
 <g transform="translate(458, 399) rotate(60.0)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<text x="0" y="-1" class="key tap"><tspan style="font-size: 60%">&amp;delete_word_mac</tspan></text>
+<text x="0" y="-1" class="key tap"><tspan style="font-size: 62%">&amp;delete…</tspan></text>
 </g>
 <g transform="translate(550, 399) rotate(-60.0)" class="key trans keypos-55">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -942,7 +954,7 @@ text.trans, .glyph.trans {
 <g transform="translate(252, 308)" class="key keypos-68">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<text x="0" y="-1" class="key tap"><tspan style="font-size: 60%">&amp;mac_copy</tspan></text>
+<text x="0" y="-1" class="key tap"><tspan style="font-size: 62%">&amp;mac_co…</tspan></text>
 </g>
 <g transform="translate(314, 347) rotate(20.0)" class="key trans keypos-69">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -2007,12 +2019,12 @@ text.trans, .glyph.trans {
 <g transform="translate(637, 312) rotate(-30.0)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<text x="0" y="-1" class="key tap"><tspan style="font-size: 60%">&amp;s_pointer</tspan></text>
+<text x="0" y="-1" class="key tap"><tspan style="font-size: 62%">&amp;s_poin…</tspan></text>
 </g>
 <g transform="translate(700, 252)" class="key keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<text x="0" y="-1" class="key tap"><tspan style="font-size: 60%">&amp;unix_home</tspan></text>
+<text x="0" y="-1" class="key tap"><tspan style="font-size: 62%">&amp;unix_h…</tspan></text>
 </g>
 <g transform="translate(756, 252)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -2226,14 +2238,12 @@ text.trans, .glyph.trans {
 <g transform="translate(756, 140)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<use href="#mdi:arrow-up" xlink:href="#mdi:arrow-up" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:arrow-up"/>
-<use href="#mdi:tire" xlink:href="#mdi:tire" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:tire"/>
 </g>
 <g transform="translate(812, 140)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
 <use href="#mdi:arrow-up" xlink:href="#mdi:arrow-up" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:arrow-up"/>
-<use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:mouse"/>
+<use href="#mdi:tire" xlink:href="#mdi:tire" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:tire"/>
 </g>
 <g transform="translate(868, 140)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -2296,12 +2306,14 @@ text.trans, .glyph.trans {
 <g transform="translate(868, 196)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
-<use href="#mdi:arrow-right" xlink:href="#mdi:arrow-right" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:arrow-right"/>
+<use href="#mdi:arrow-up" xlink:href="#mdi:arrow-up" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:arrow-up"/>
 <use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:mouse"/>
 </g>
 <g transform="translate(924, 224)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="48" class="key"/>
+<use href="#mdi:arrow-right" xlink:href="#mdi:arrow-right" x="-7" y="-8" height="14" width="14.0" class="key tap glyph mdi:arrow-right"/>
+<use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:mouse"/>
 </g>
 <g transform="translate(980, 224)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
