@@ -1,0 +1,11 @@
+manifest:
+  remotes:
+    - name: bryanforbes
+      url-base: https://github.com/bryanforbes
+  projects:
+    - name: zmk
+      remote: bryanforbes
+      revision: eb1b1d341f7f0a2bb40b30575f0d48bb95c48794
+      import: app/west.yml
+  self:
+    path: config

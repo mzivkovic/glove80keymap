@@ -160,8 +160,8 @@
             name: name { \
                 compatible = "zmk,behavior-macro"; \
                 label = ZMK_HELPER_STRINGIFY(name); \
-                wait-ms = <0>; \
-                tap-ms = <0>; \
+                wait-ms = <30>; \
+                tap-ms = <40>; \
                 #binding-cells = <0>; \
                 bindings =  <&macro_press &kp one>, <&macro_tap &kp two>,  <&macro_release &kp one>; \
             }; \

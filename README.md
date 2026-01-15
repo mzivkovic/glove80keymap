@@ -8,4 +8,4 @@ This is my configuration for glove80 keyboard
 
 The following representation was generated with [`keymap-drawer`](https://github.com/caksoylar/keymap-drawer):
 
-![Glove80 layout](./graphic/glove80.svg)
+![Glove80 layout](keymap-drawer/glove80.svg)

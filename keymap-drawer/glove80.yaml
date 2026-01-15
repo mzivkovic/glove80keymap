@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: glove80}
+layout: {zmk_keyboard: glove80}
 layers:
   Base:
   - {t: '1', h: toggle}
@@ -11,8 +11,8 @@ layers:
   - ''
   - ''
   - ''
-  - '='
-  - '1'
+  - ''
+  - ''
   - '['
   - '{'
   - (
@@ -21,8 +21,8 @@ layers:
   - )
   - '}'
   - ']'
-  - '0'
-  - '-'
+  - ''
+  - ''
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -57,30 +57,30 @@ layers:
   - '&paste'
   - '&delete_word'
   - +
-  - '-'
-  - '='
+  - {t: '-', h: '&pointer'}
+  - {t: _, h: '&s_pointer'}
   - N
   - M
   - ','
   - .
   - /
-  - PgUp
+  - ''
   - $$mdi:auto-fix$$
-  - Home
+  - ''
   - {t: '&undo', h: '&undo_alt'}
   - '&cut'
   - '&copy'
-  - {t: BSPC, h: Numbers, s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:backspace-outline$$', h: Numbers, s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '"', h: Symbol}
   - {t: '$$mdi:keyboard-tab$$', h: Navigation}
-  - '='
+  - {t: '=', h: '&not_equal'}
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
   - INS
   - $$mdi:backspace-reverse-outline$$
-  - '['
-  - ']'
-  - PgDn
+  - ''
+  - ''
+  - ''
   '1':
   - {t: Base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -202,7 +202,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
-  - ''
+  - {t: Mouse, h: toggle}
   - Home
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
@@ -244,16 +244,16 @@ layers:
   - ''
   - ''
   Numbers:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -347,7 +347,6 @@ layers:
   - ''
   - ''
   - ''
-  - '~'
   - ''
   - ''
   - ''
@@ -359,24 +358,25 @@ layers:
   - ''
   - ''
   - ''
-  - '#'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '|'
   - ^
   - _
-  - '-'
-  - '|'
-  - '*'
-  - _
-  - '&'
-  - +
   - /
-  - '!'
-  - '?'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
   - '~'
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -384,9 +384,9 @@ layers:
   - '&pointer'
   - '&s_pointer'
   - '&unix_home'
-  - ''
   - \
-  - '&pointer'
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -397,7 +397,7 @@ layers:
   - ''
   - {type: held}
   - ''
-  - ''
+  - '&not_equal'
   - ''
   - {t: '$$mdi:transfer$$', type: trans}
   - ''
@@ -436,7 +436,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:arrow-up$$', h: '$$mdi:tire$$'}
+  - {t: '$$mdi:arrow-down$$', h: '$$mdi:tire$$'}
   - {t: '$$mdi:arrow-up$$', h: '$$mdi:tire$$'}
   - ''
   - ''
@@ -446,7 +446,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
   - ''
-  - ''
+  - {t: Mouse, h: toggle}
   - {t: '$$mdi:arrow-left$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:arrow-down$$', h: '$$mdi:mouse$$'}
   - {t: '$$mdi:arrow-up$$', h: '$$mdi:mouse$$'}
@@ -465,9 +465,9 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:arrow-down$$', h: '$$mdi:tire$$'}
   - ''
-  - {t: '$$mdi:arrow-down$$', h: '$$mdi:tire$$'}
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -479,8 +479,8 @@ layers:
   - ''
   - {type: held}
   - {t: Base, h: toggle}
-  - {t: '$$mdi:numeric-2$$', h: '$$mdi:mouse$$'}
-  - {t: '$$mdi:numeric-1$$', h: '$$mdi:mouse$$'}
+  - '&mkp RCLK'
+  - '&mkp LCLK'
   - ''
   - ''
   - ''
