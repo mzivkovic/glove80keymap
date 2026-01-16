@@ -57,8 +57,8 @@ layers:
   - '&paste'
   - '&delete_word'
   - +
-  - {t: '-', h: '&pointer'}
-  - {t: _, h: '&s_pointer'}
+  - '-'
+  - _
   - N
   - M
   - ','
@@ -365,8 +365,8 @@ layers:
   - ''
   - '|'
   - ^
-  - _
   - /
+  - '&unix_home'
   - ''
   - ''
   - ''
@@ -383,8 +383,8 @@ layers:
   - ''
   - '&pointer'
   - '&s_pointer'
-  - '&unix_home'
   - \
+  - ''
   - ''
   - ''
   - ''
