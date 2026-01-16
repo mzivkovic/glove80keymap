@@ -123,20 +123,6 @@ ZMK_BEHAVIOR(equal_not_equal, hold_tap,
     quick-tap-ms = <300>;
 )
 
-ZMK_BEHAVIOR(minus_pointer, hold_tap,
-    flavor = "balanced";
-    bindings = <&pointer>, <&kp>;
-    tapping-term-ms = <200>;
-    quick-tap-ms = <300>;
-)
-
-ZMK_BEHAVIOR(under_s_pointer, hold_tap,
-    flavor = "balanced";
-    bindings = <&s_pointer>, <&kp>;
-    tapping-term-ms = <200>;
-    quick-tap-ms = <300>;
-)
-
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
 ZMK_BEHAVIOR(smart_shft, mod_morph,
@@ -280,7 +266,7 @@ GLV80_LAYER(Base,
 // ╰───────────────┴────────────────────┴───────────────────┴───────────────────┴─────────────────────╯                     ╰─────────────────────┴───────────────────┴─────────────────────┴───────────────────────┴───────────╯
                                                                                                                  ,
 //                             ╭──────────────────────────┬─────────────────────┬───────────────────────────╮         ╭─────────────────────────────┬───────────────────────────┬─────────────────────╮
-                                        &caps_word               &paste                  &delete_word                       &kp PLUS                   &minus_pointer 0 MINUS       &under_s_pointer 0 UNDER
+                                        &caps_word               &paste                  &delete_word                       &kp PLUS                      &kp MINUS                  &kp UNDER
 /*                             ├──────────────────────────┼─────────────────────┼───────────────────────────┤ */ , /* ├─────────────────────────────┼───────────────────────────┼─────────────────────┤ */
                                    &thumb_bkspc NUMBERS 0   &thumb SYMBOL DQT      &thumb NAVIGATION TAB                  &equal_not_equal 0 EQUAL       &kp RET                    &kp SPACE
 //                             ╰──────────────────────────┴─────────────────────┴───────────────────────────╯         ╰─────────────────────────────┴───────────────────────────┴─────────────────────╯
@@ -363,9 +349,9 @@ GLV80_LAYER(Symbol,
 // ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
      XXX            XXX           XXX           XXX           XXX        XXX              XXX          XXX          XXX          XXX           XXX          XXX
 // ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-     XXX            XXX           XXX           XXX       &kp PIPE    &kp CARET         &kp UNDER     &kp SLASH     XXX          XXX         XXX          XXX
+     XXX            XXX           XXX           XXX       &kp PIPE    &kp CARET         &kp SLASH    &unix_home    XXX          XXX         XXX          XXX
 // ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-     XXX              XXX           XXX        XXX         XXX         &kp TILDE   ,   &unix_home  &kp BACKSLASH    XXX        XXX           XXX          XXX
+     XXX              XXX           XXX        XXX         XXX         &kp TILDE   ,  &kp BACKSLASH      XXX        XXX           XXX          XXX          XXX
 // ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────╯   ╰────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
      XXX              XXX         XXX         XXX           XXX                    ,                XXX              XXX          XXX          XXX          XXX
 // ╰────────────┴────────────┴────────────┴────────────┴────────────╯                             ╰────────────┴────────────┴────────────┴────────────┴────────────╯
