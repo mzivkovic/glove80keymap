@@ -291,20 +291,20 @@ layers:
   - '0'
   - '-'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - +
   - '-'
   - '='
-  - ^
-  - '&'
-  - '*'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -341,7 +341,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&unix_home'
   - ''
   - ''
   - ''
@@ -366,29 +366,29 @@ layers:
   - '|'
   - ^
   - /
-  - '&unix_home'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - '~'
   - ''
   - ''
   - ''
   - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ''
+  - ''
+  - ''
+  - '?'
   - '&pointer'
   - '&s_pointer'
-  - \
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - ^
+  - '&'
+  - '*'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - ''
   - ''
   - ''
