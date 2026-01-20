@@ -34,7 +34,7 @@ layers:
   - I
   - O
   - P
-  - \
+  - ''
   - Esc
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
@@ -63,7 +63,7 @@ layers:
   - M
   - ','
   - .
-  - /
+  - ':'
   - ''
   - $$mdi:auto-fix$$
   - ''
@@ -371,9 +371,9 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
-  - '@'
+  - ''
+  - ''
+  - ''
   - '#'
   - $
   - '%'
@@ -386,9 +386,9 @@ layers:
   - ^
   - '&'
   - '*'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
